@@ -1,0 +1,161 @@
+.main {
+    padding: 28px 16px;
+}
+
+.go_back {
+    // Scale
+    padding: 5px 5px 5px 25px;
+    // Style
+    font-family: sans-serif;
+    font-size: 14px;
+    background: none;
+    background-size: contain;
+    background-image: url("./../../images/icons/go-back-icon.svg");
+    background-repeat: no-repeat;
+    border: none;
+    color: #eb6309;
+}
+
+.logo {
+    // Location
+    position: absolute;
+    right: 16px;
+}
+
+// About us
+
+.content_item {
+    // Scale
+    min-height: 50px;
+    width: 100%;
+    padding: 20px;
+    margin: 24px 0;
+    // Style
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+    // Style
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hr {
+    // Scale
+    height: 2px;
+    width: 32px;
+    margin: 12px 0;
+    // Style
+    color: #fd8c3b;
+    background-color: #fd8c3b;
+    border: 0px none;
+}
+
+.paragraph {
+    // Style
+    font-size: 16px;
+    line-height: 24px;
+}
+
+// Services
+
+.services_container {
+    // Scale
+    min-height: 50px;
+    width: 100%;
+    margin: 24px 0;
+    // Style
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.services_item {
+    // Scale
+    padding: 25px 20px;
+    // Location
+    display: flex;
+    align-items: center;
+    // Style
+    list-style: none;
+}
+
+.services_item:not(:last-child) {
+    // Style
+    border-bottom: 1px dashed #c9c9c9;
+}
+
+.item_preview {
+    // Scale
+    height: 64px;
+    width: 64px;
+    // Location
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Style
+    border-radius: 50%;
+    background: linear-gradient(55deg, #fe9040 14.37%, #fa709a 90.59%);
+}
+
+.item_content {
+    margin-left: 20px;
+}
+
+.item_paragraph {
+    // Scale
+    margin-top: 5px;
+    // Style
+    font-size: 12px;
+    line-height: 16px;
+}
+
+// Contacts
+
+.contacts_container {
+    // Scale
+    min-height: 50px;
+    width: 100%;
+    padding: 20px;
+    margin: 24px 0 130px;
+    // Style
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contact_item {
+    // Scale
+    margin: 20px 0;
+    // Style
+    list-style: none;
+    // Location
+    display: flex;
+    align-items: center;
+}
+
+.item_link {
+    // Scale
+    margin-left: 15px;
+    // Style
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+
+.links_container {
+    // Scale
+    margin-top: 30px;
+    // Location
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social_link {
+    // Style
+    list-style: none;
+}

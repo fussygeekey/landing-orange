@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url("./fonts/SourceSansPro/SourceSansPro-Light.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url("./fonts/SourceSansPro/SourceSansPro-Bold.ttf");
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f4f1;
+}
+
+h1 {
+  font-family: Montserrat;
+}
+
+h2,
+h3 {
+  font-family: Montserrat;
+}
+
+p,
+li {
+  font-family: SourceSansPro;
+  font-weight: 100;
+}
+
+button {
+  outline: none;
+}

@@ -1,0 +1,54 @@
+.target_item {
+    // Scale
+    height: 172px;
+    width: 172px;
+    // Location
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // Style
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.item:not(:last-child) {
+    // Style
+    margin-bottom: 32px;
+}
+
+.heading {
+    // Style
+    font-size: 64px;
+    color: #fd8c3b;
+}
+
+.paragraph {
+    // Style
+    font-size: 16px;
+    text-align: center;
+}
+
+.p_third_item {
+    // Style
+    font-family: SourceSansPro;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.p_item {
+    // Style
+    color: #fd8c3b;
+}
+
+.targets {
+    // Location
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // Style
+    list-style-type: none;
+}

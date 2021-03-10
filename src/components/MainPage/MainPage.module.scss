@@ -1,0 +1,163 @@
+// Preview
+
+.preview {
+    // Scale
+    height: calc(100vh + 16px);
+    padding: 16px;
+    // Location
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    // Style
+    background-color: black;
+    background-image: url("./../../gif/main-preview.gif");
+    background-position: center;
+    border-radius: 0 0 16px 16px;
+}
+
+.bg_video {
+    // Scale
+    height: 100%;
+    width: 100%;
+    // Location
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    // Style
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.logo {
+    // Scale
+    @media screen and (max-width: 320px) {
+        margin-bottom: 10px;
+    }
+    margin-bottom: 50px;
+    // Location
+    // position: absolute;
+    // top: 150px;
+    // z-index: 2;
+}
+
+.preview_content {
+    // Location
+    z-index: 1;
+    // Style
+    color: white;
+}
+
+.heading {
+    // Style
+    @media screen and (max-width: 320px) {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.hr {
+    // Scale
+    height: 12px;
+    width: 52px;
+    margin: 16px 0;
+    // Style
+    color: #fd8c3b;
+    background-color: #fd8c3b;
+    border: 0px none;
+}
+
+.paragraph {
+    // Style
+    @media screen and (max-width: 320px) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    font-size: 24px;
+    line-height: 32px;
+}
+
+// Slider
+
+.slider {
+    // Scale
+    height: 100px;
+    @media screen and (max-width: 320px) {
+        margin-top: 10px;
+    }
+    margin-top: 50px;
+    // Location
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    // Scale
+    height: 32px;
+    width: 32px;
+    // Location
+    position: absolute;
+    z-index: 1;
+    // Style
+    border: 1px solid white;
+    border-radius: 50%;
+    // Animation
+    -webkit-animation: move 1s infinite;
+    animation: move 2s infinite;
+    backdrop-filter: blur(5px);
+}
+
+.guide {
+    // Scale
+    width: 100px;
+    height: 1px;
+    // Location
+    transform: rotate(90deg);
+    // Style
+    border: none;
+    background: linear-gradient(45deg, rgba(0, 0, 0, .0), white, rgba(0, 0, 0, .0));
+}
+
+@-webkit-keyframes move {
+    from {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+// Target items
+
+.target_items {
+    // Scale
+    padding: 52px 0;
+}
+
+// Case swiper
+
+.cases {
+    padding: 0 0 150px 0;
+}

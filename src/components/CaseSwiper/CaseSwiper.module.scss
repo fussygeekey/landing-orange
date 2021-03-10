@@ -1,0 +1,69 @@
+.case_link {
+    // Style
+    text-decoration: none;
+    color: black;
+}
+
+.case {
+    // Scale
+    height: 550px;
+    width: calc(100vw - 32px);
+    max-width: 400px;
+    margin-left: 16PX;
+    // Style
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.preview {
+    // Scale
+    height: 50%;
+    // Location
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Style
+    border-radius: 16px;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.preview_logo {
+    // Location
+    position: absolute;
+}
+
+.preview_image {
+    // Scale
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+}
+
+.content {
+    // Scale
+    padding: 40px 20px;
+}
+
+.heading {
+    // Style
+    font-size: 16px;
+}
+
+.hr {
+    // Scale
+    height: 2px;
+    width: 32px;
+    margin: 12px 0;
+    // Style
+    color: #FD8C3B;
+    background-color: #FD8C3B;
+    border: 0px none;
+}
+
+.paragraph {
+    // Style
+    font-size: 16px;
+    line-height: 24px;
+}

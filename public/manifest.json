@@ -1,0 +1,13 @@
+{
+  "short_name": "orange-landing",
+  "name": "Orange Marketing | Разработка интернет-продуктов",
+  "icons": [
+    {
+      
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
