@@ -7,10 +7,12 @@
     bottom: 0;
     z-index: 2;
     // Style
-    background-color: rgba(0, 0, 0, .5);;
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 -6px 10px rgba(187, 187, 187, 0.15);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    -webkit-mask: url("./../../images/content/bar-part.svg") right/cover no-repeat;
+    mask: url("./../../images/content/bar-part.svg") right/cover no-repeat;
 }
 
 .send_application {
@@ -21,14 +23,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 25px;
+    position: fixed;
+    right: 24px;
     bottom: 30px;
+    z-index: 2;
     // Style
     background-color: #eb6309;
-    box-shadow: 0 0 20px black;
     border-radius: 50%;
     border: none;
+    box-shadow: 0 0 10px grey;
+}
+
+.send_application img {
+    // Animation
+    transition: .2s;
 }
 
 .link_button {

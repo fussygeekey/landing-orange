@@ -4,7 +4,7 @@ import style from './NavigationBar.module.scss'
 import Aos from 'aos';
 import '../../../node_modules/aos/dist/aos.css'
 // RRD
-import { Link, withRouter } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 // Modal window
 import ModalWindow from './../ModalWindow/ModalWindow'
 // Icons
@@ -46,20 +46,20 @@ function NavigationBar() {
             <nav className={style.nav_bar}>
                 <ul className={style.nav_links}>
                     <li>
-                        <Link className={style.link_button} to="/">
+                        <NavLink className={style.link_button} activeClassName={style.selected_link_button} to="/">
                             <img src={homeIcon} />
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link className={style.link_button} to="/about">
+                        <NavLink className={style.link_button} activeClassName={style.selected_link_button} to="/about">
                             <img src={caseIcon} />
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
-                <button className={style.send_application} onClick={showModal}>
-                    <img src={changedIcon} />
-                </button>
             </nav>
+            <button className={style.send_application} onClick={showModal}>
+                <img src={changedIcon} />
+            </button>
         </React.Fragment>
     );
 }

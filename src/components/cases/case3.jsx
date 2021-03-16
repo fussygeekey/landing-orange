@@ -1,9 +1,12 @@
 // Images
-import preview from './../../images/content/cases/MebelStyle/preview.jpg'
+import preview from './../../images/content/cases/MebelStyle/preview.png'
 // Prototype's slides
+import prototypeImage1 from './../../images/content/cases/MebelStyle/prototype-image1.svg'
+import prototypeImage2 from './../../images/content/cases/MebelStyle/prototype-image2.jpg'
 // Adaptive images
 // Design images
-import designImage from './../../images/content/cases/MebelStyle/design-image.jpg'
+import designImage1 from './../../images/content/cases/MebelStyle/content-design-image1.jpg'
+import designImage2 from './../../images/content/cases/MebelStyle/content-design-image2.jpg'
 
 
 
@@ -32,38 +35,38 @@ export default {
     prototypesText2: 'С их помощью нам удалось пройти путь потенциального посетителя сайта и довести интуитивную структуру сайта до логического завершения.',
     prototypesText3: 'Формируя «дружелюбный» интерфейс страниц, мы отталкивались от философии самой компании и, конечно, от требований поисковых систем.',
     slides: [
+        prototypeImage1,
+        prototypeImage2
     ],
 
     // Style
-    firstColor: '#AAAAAA',
-    secondColor: '#BBBBBB',
-    thirdColor: '#CCCCCC',
+    colors: [
+        '#006B2D',
+        '#FF5559',
+        '#33383A',
+    ],
 
     firstFontExample: 'Lorem Bold',
     secondFontExample: 'Lorem Italic',
 
     images: [
-        designImage,
-        designImage,
-        designImage
     ],
 
     // Adaptive design
-    designText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quae atque natus nisi mollitia, architecto cum rerum soluta repudiandae, maiores iusto at commodi perspiciatis. At voluptate tenetur sed quasi suscipit.',
+    designText: 'Следующая задача — адаптировать разработанный дизайн для мобильных устройств. Пользователь должен получить всю необходимую информацию, где бы он ни находился.',
 
     designImages: [
-        designImage,
-        designImage,
-        designImage
+        designImage1,
+        designImage2
     ],
 
     // Build
-    buildText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quae atque natus nisi mollitia, architecto cum rerum soluta repudiandae, maiores iusto at commodi perspiciatis. At voluptate tenetur sed quasi suscipit.',
+    buildText: 'Финальный этап разработки — сборка сайта. Грамотная и качественная. Наши программисты подогнали каждый винтик и продумали каждую строку кода, чтобы ресурс был надежным и стабильным.',
 
     // Footer
     tech: 'CMS Bitrix',
     feature: 'Адаптивность на всех устройствах',
 
-    hours: '',
-    humansValue: ''
+    hours: '120 часов',
+    humansValue: '5'
 }

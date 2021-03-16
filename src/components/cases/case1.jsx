@@ -1,5 +1,5 @@
 // Images
-import preview from './../../images/content/cases/PANH/PANH-preview.jpg'
+import preview from './../../images/content/cases/PANH/PANH-preview.png'
 import styleImage from './../../images/content/cases/PANH/content-style-image.png'
 import designImage from './../../images/content/cases/PANH/content-design-image.jpg'
 import { Form } from 'formik'
@@ -44,9 +44,11 @@ export default {
     ],
 
     // Style
-    firstColor: '#EDB238',
-    secondColor: '#5F6C74',
-    thirdColor: '#212121',
+    colors: [
+        '#EDB238',
+        '#5F6C74',
+        '#212121'
+    ],
 
     firstFontExample: 'Ubuntu Bold',
     secondFontExample: 'Open Sans',

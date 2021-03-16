@@ -23,7 +23,7 @@ function MainPage() {
                 <div className={style.preview_content}>
                     <img src={logo} className={style.logo} data-aos="fade-down-left" />
                     <h1 className={style.heading}>
-                        Разработка продуктов: от лендинга до erp-системы
+                        Разработка продуктов: от лендинга до ERP-системы
                     </h1>
                     <hr className={style.hr} data-aos="zoom-out-down" />
                     <p className={style.paragraph}>

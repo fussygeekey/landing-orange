@@ -23,7 +23,7 @@ function Targets(props) {
 
     for (let i in props.targets) {
         targets.push(
-            <li>
+            <li key={i}>
                 {props.targets[i]}
             </li>
         );
@@ -41,8 +41,14 @@ function SwipeContainer(props) {
 
     for (let i in props.slides) {
         items.push(
-            <SwiperSlide style={{ marginLeft: 16 }}>
-                <img src={props.slides[i]}/>
+            <SwiperSlide
+                key={i}
+                style={{ marginLeft: 16 }}
+            >
+                <img
+                    src={props.slides[i]}
+                    height={500}
+                />
             </SwiperSlide>
         );
     }
@@ -71,12 +77,31 @@ function ColorPoint(props) {
     );
 }
 
+function ColorPointsContainer(props) {
+    let colors = []
+
+    for (let i in props.colors) {
+        colors.push(
+            <ColorPoint
+                key={i}
+                color={props.colors[i]}
+            />
+        )
+    }
+
+    return (
+        <div className={style.colors}>
+            {colors}
+        </div>
+    )
+}
+
 function ImagesSwiper(props) {
     let items = [];
 
     for (let i in props.images) {
         items.push(
-            <SwiperSlide>
+            <SwiperSlide key={i}>
                 <div
                     className={style.slide_block}
                     style={{
@@ -182,17 +207,7 @@ function Case(props) {
                     <h3 className={style.under_heading}>
                         Палитра
                     </h3>
-                    <ul className={style.colors}>
-                        <li>
-                            <ColorPoint color={props.case.firstColor} />
-                        </li>
-                        <li>
-                            <ColorPoint color={props.case.secondColor} />
-                        </li>
-                        <li>
-                            <ColorPoint color={props.case.thirdColor} />
-                        </li>
-                    </ul>
+                    <ColorPointsContainer colors={props.case.colors}/>
                     <h3 className={style.under_heading}>
                         Шрифты
                     </h3>
@@ -227,9 +242,9 @@ function Case(props) {
                     </ul>
                 </div>
                 <ImagesSwiper
-                    height={200}
+                    height={250}
                     images={props.case.images}
-                    position="bottom"
+                    position="center"
                 />
             </section>
 
